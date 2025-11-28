@@ -3,6 +3,13 @@
   border: 2px solid rgb(87, 125, 145);
 } */
 
+.hero {
+  height: 100vh;
+  align-content: center;
+  position: relative;
+  bottom: 4em;
+}
+
 .type {
   text-align: left;
 }
