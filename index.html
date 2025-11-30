@@ -12,7 +12,7 @@
   </head>
 
   <body>
-    <header>
+    <header class="stick-top">
       <nav class="container text-center">
         <ul class="row list-unstyled justify-content-evenly">
           <li class="col-1">
@@ -33,11 +33,13 @@
 
     <main>
         <div class="container text-center hero">
-          <h1>WELCOME. WHAT WOULD YOU LIKE TO DO?</h1>
+          <div class="container hero-content">
+            <h1>WELCOME. WHAT WOULD YOU LIKE TO DO?</h1>
 
-          <div class="row justify-content-center column-gap-4">
-            <button class="btn btn-outline-primary col-2">Browse Collection</button>
-            <button class="btn btn-outline-primary col-2">Edit Collection</button>
+            <div class="row justify-content-center column-gap-4">
+              <a class="btn btn-outline-primary col-2" href="browse.html">Browse Collection</a>
+              <a class="btn btn-outline-primary col-2" href="edit.html">Edit Collection</a>
+            </div>
           </div>
         </div>
 
@@ -65,6 +67,8 @@
             <button>Randomize!</button>
           </div>
         </div>
+
+        <div class="tester"></div>
     </main>
 
     <footer>

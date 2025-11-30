@@ -3,13 +3,31 @@
   border: 2px solid rgb(87, 125, 145);
 } */
 
+.tester {
+  height: 1000px;
+}
+
 .hero {
   height: 100vh;
+  height: 100dvh;
   align-content: center;
-  position: relative;
-  bottom: 4em;
+  position: static;
+}
+
+.hero-content {
+  margin-top: -6em
 }
 
 .type {
   text-align: left;
+}
+
+header {
+  background-color: aquamarine;
+  position: sticky;
+  top: 0;
+}
+
+li {
+  padding: .7em 0 .7em 0;
 }
