@@ -31,3 +31,8 @@ header {
 li {
   padding: .7em 0 .7em 0;
 }
+
+
+.form-floating {
+    margin-bottom: 1em;
+}
