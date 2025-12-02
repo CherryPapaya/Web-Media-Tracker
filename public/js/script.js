@@ -22,13 +22,13 @@
 //     console.log("Ahhhh, General Kenobi")
 // })
 
-if (document.location.pathname === "/public/html/add.html"){
+if (document.location.pathname === "/add.html"){
     add();
     helloAgain();
 
 }
 
-if (document.location.pathname === "/public/html/index.html") {
+if (document.location.pathname === "/index.html") {
     hello();
 }
 
