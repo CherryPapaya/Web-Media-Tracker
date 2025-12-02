@@ -3,6 +3,23 @@
   border: 2px solid rgb(87, 125, 145);
 } */
 
+.box-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  background-color: aquamarine;
+  border: solid 2px black;
+  padding: 4em;
+  width: 10%;
+  height: 10%;
+
+
+}
+
 .tester {
   height: 1000px;
 }
@@ -30,6 +47,14 @@ header {
 
 li {
   padding: .7em 0 .7em 0;
+  cursor: pointer;
+
+  transition: background-color .2s;
+}
+
+
+li:hover {
+  background-color: rgb(63, 63, 63);
 }
 
 li > a {
@@ -37,7 +62,6 @@ li > a {
   text-decoration: none;
   font-weight: 600;
 }
-
 
 .form-floating {
     margin-bottom: 1em;
