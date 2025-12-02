@@ -16,8 +16,6 @@
   padding: 4em;
   width: 10%;
   height: 10%;
-
-
 }
 
 .tester {
@@ -47,6 +45,7 @@ header {
 
 li {
   padding: .7em 0 .7em 0;
+  /* border-top: solid 2px white; */
   cursor: pointer;
 
   transition: background-color .2s;
