@@ -15,7 +15,7 @@
     <header>
       <nav class="cotnainer text-center">
         <ul class="row justify-content-evenly">
-          <li class="col-1">
+          <li class="col-2">
             <a href="index.html" class="">Home</a>
           </li>
         </ul>
@@ -26,30 +26,49 @@
       <div class="container">
         <h2>Add an item</h2>
         <div class="row">
-          <form class="col-4">
+          <form class="col-4" id="mediaForm" action="/add" method="POST">
             <div class="form-floating">
-              <input type="text" class="form-control" id="title" placeholder="title" value="Hello There">
+              <input type="text" class="form-control" name="title" placeholder="title">
               <label for="title">Title</label>
             </div>
 
             <div class="form-floating">
-              <input type="number" class="form-control" id="year" placeholder="year" value="133">
+              <input type="number" class="form-control" name="year" placeholder="year">
               <label for="year">Year</label>
             </div>
 
             <div class="form-floating">
-              <input type="text" class="form-control" id="person" placeholder="person" value="Obi-Wan Kenobi">
+              <input type="text" class="form-control" name="person" placeholder="person">
               <label for="person">Person</label>
             </div>
 
+            <div class="form-floating col-5">
+              <select class="form-select" name="type">
+                <!-- <option value="" selected disabled hidden>Select an option</option> -->
+                <option value="Book">Book</option>
+                <option value="Movie">Movie</option>
+                <option value="TV show">TV Show</option>
+                <option value="Video Game">Video Game</option>
+              </select>
+              <label for="type">Type</label>
+            </div>
+
             <div class="form-floating">
-              <textarea class="form-control" id="description" ></textarea>
+              <textarea class="form-control" name="description"></textarea>
               <label for="description">Description</label>
             </div>
 
-            <button class="btn btn-outline-primary submit-button" id="submit-button" type="button">Submit</button>
+            <button class="btn btn-outline-primary submit-button" id="submit-button" type="submit">Submit</button>
           </form>
-          <button class="btn btn-outline-primary" id="hello-again">Hello Again</button>
+          <!-- <form id="mediaForm" action="/add" method="POST">
+            <input type="text" name="title" placeholder="Title" required>
+            <input type="number" name="year" placeholder="Year">
+            <input type="text" name="person" placeholder="Person">
+            <textarea name="description" placeholder="Description"></textarea>
+            <button type="submit">Submit</button>
+          </form> -->
+
+          <!-- <button class="btn btn-outline-primary" id="hello-again">Hello Again</button> -->
         </div>
       </div>
 

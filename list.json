@@ -1,13 +1,42 @@
 [
   {
     "title": "Ahsoka",
-    "type": "book",
-    "person": "E. K. Johnston"
+    "year": 111,
+    "person": "E. K. Johnston",
+    "type": "Book"
   },
-
   {
     "title": "Thrawn",
-    "type": "book",
-    "person": "Timothy Zahn"
+    "year": 2222,
+    "person": "Timothy Zahn",
+    "type": "Book"
+  },
+  {
+    "title": "Hello There",
+    "year": "133",
+    "person": "Obi-Wan Kenobi",
+    "type": "Book",
+    "description": ""
+  },
+  {
+    "title": "Hello There",
+    "year": "133",
+    "person": "Obi-Wan Kenobi",
+    "type": "Book",
+    "description": ""
+  },
+  {
+    "title": "Item",
+    "year": "54621",
+    "person": "Someone",
+    "type": "Movie",
+    "description": "This is a thing"
+  },
+  {
+    "title": "",
+    "year": "",
+    "person": "",
+    "type": "Book",
+    "description": ""
   }
 ]
