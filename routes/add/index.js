@@ -27,7 +27,9 @@ router.post('/add', (req, res) => {
 
     if (fs.existsSync(listPath)) {
         const fileContent = fs.readFileSync(listPath, 'utf-8');
-        data = JSON.parse(fileContent);
+        if (fileContent) {
+            data = JSON.parse(fileContent);
+        }
     }
 
     data.push(mediaData);
