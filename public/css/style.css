@@ -44,12 +44,17 @@ li > a:hover {
     field-sizing: content;
 }
 
+table {
+  table-layout: fixed;
+}
+
 .truncate {
   white-space: nowrap;
-  overflow: hidden;
+  overflow-y: hidden;
   text-overflow: ellipsis;
 }
 
 .truncate:hover {
-  overflow: visible;
+  white-space: normal;
+  overflow-y: visible;
 }
