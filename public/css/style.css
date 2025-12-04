@@ -52,17 +52,16 @@ body {
 }
 
 @keyframes pulsate {
-  0% {
-    text-shadow: transparent;
+  0%, 100% {
+    text-shadow: 0 0 3em rgba(255, 255, 255, .3),
+      0 0 4em rgba(255, 255, 255, 0.2),
+      0 0 5em rgba(255, 255, 255, 0.1);
   }
   50% {
     text-shadow:
       0 0 3em rgba(255, 255, 255, 1),
       0 0 4em rgba(255, 255, 255, 0.8),
       0 0 5em rgba(255, 255, 255, 0.6);
-  }
-  100% {
-    text-shadow: transparent;
   }
 }
 
@@ -71,7 +70,7 @@ h1 {
   padding-bottom: 1rem;
 
   animation-name: pulsate;
-  animation-duration: 5s;
+  animation-duration: 2s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 
