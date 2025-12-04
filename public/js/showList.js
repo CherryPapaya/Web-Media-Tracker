@@ -6,7 +6,6 @@ fetch('show')
     const listContainer = document.getElementById('table');
 
     listContainer.innerHTML = `
-
       <colgroup>
         <col style="width:10%">
         <col style="width:15%">
@@ -28,7 +27,7 @@ fetch('show')
 
     list.forEach((item) => {
       const tr = document.createElement('tr');
-      tr.className = 'border-bottom-0';
+      // tr.className = 'border-bottom-0';
 
       tr.innerHTML = `
         <td>${item.title}</td>
