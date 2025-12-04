@@ -37,8 +37,6 @@ router.post('/add', (req, res) => {
     fs.writeFileSync(listPath, JSON.stringify(data, null, 2));
 
     res.redirect('/add.html');
-    // const dataPretty = JSON.stringify(data, null, 2);
-    // console.log(`${dataPretty}`);
 })
 
 module.exports = router;
