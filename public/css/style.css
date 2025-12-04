@@ -51,11 +51,10 @@ body {
   text-align: left;
 }
 
-@keyframes pulsate {
+@keyframes glow {
   0%, 100% {
-    text-shadow: 0 0 3em rgba(255, 255, 255, .3),
-      0 0 4em rgba(255, 255, 255, 0.2),
-      0 0 5em rgba(255, 255, 255, 0.1);
+    text-shadow:
+      0 0 5em rgba(255, 255, 255, 1),
   }
   50% {
     text-shadow:
@@ -69,20 +68,11 @@ h1 {
   font-weight: 600;
   padding-bottom: 1rem;
 
-  animation-name: pulsate;
-  animation-duration: 2s;
+  animation-name: glow;
+  animation-duration: 3.5s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
-
-  /* transition: text-shadow 1s; */
 }
-
-/* h1:hover {
-  text-shadow:
-    0 0 3em rgba(255, 255, 255, 1),
-    0 0 4em rgba(255, 255, 255, 0.8),
-    0 0 5em rgba(255, 255, 255, 0.6);
-} */
 
 table {
   table-layout: fixed;
