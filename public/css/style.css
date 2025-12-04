@@ -3,24 +3,6 @@
   border: 2px solid rgb(87, 125, 145);
 } */
 
-.box-container {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.box {
-  background-color: aquamarine;
-  border: solid 2px black;
-  padding: 4em;
-  width: 10%;
-  height: 10%;
-}
-
-.tester {
-  height: 1000px;
-}
 
 .hero {
   height: 100vh;
@@ -59,4 +41,15 @@ li > a:hover {
 
 [class*="form-"] {
     margin-bottom: 1em;
+    field-sizing: content;
+}
+
+.truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.truncate:hover {
+  overflow: visible;
 }

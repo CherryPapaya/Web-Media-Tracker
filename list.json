@@ -1,0 +1,30 @@
+[
+  {
+    "title": "Hello There",
+    "year": "9",
+    "person": "Obi-Wan Kenobi",
+    "type": "Movie",
+    "description": "An iconic scene where General Kenobi let's go of any semblance of a strategic plan and simply makes his presence known smackdab in the middle of an opposing army."
+  },
+  {
+    "title": "fadfa",
+    "year": "3",
+    "person": "adfa",
+    "type": "Book",
+    "description": "adfadfadfadf"
+  },
+  {
+    "title": "Another One",
+    "year": "3",
+    "person": "DJ Khaled",
+    "type": "Movie",
+    "description": "Even more"
+  },
+  {
+    "title": "Even MOREEE",
+    "year": "6",
+    "person": "AHHHHHHHHH",
+    "type": "Book",
+    "description": "AHHHHHHHHH"
+  }
+]
