@@ -7,20 +7,22 @@ fetch('show')
 
     listContainer.innerHTML = `
       <colgroup>
+        <col style="width:15%">
         <col style="width:10%">
         <col style="width:15%">
-        <col style="width:15%">
-        <col style="width:20%">
-        <col style="width:40%">
+        <col style="width:10%">
+        <col style="width:50%">
       </colgroup>
 
-      <tr>
-        <th>Title</th>
-        <th>Year</th>
-        <th>Person</th>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Year</th>
+          <th>Person</th>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
     `;
 
     list = JSON.parse(fileContent);

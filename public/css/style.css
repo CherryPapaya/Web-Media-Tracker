@@ -1,8 +1,40 @@
-/* .col {
-  background-color: aquamarine;
-  border: 2px solid rgb(87, 125, 145);
-} */
+* {
+  /* background-color: rgb(35, 35, 35); */
+  color: rgb(237, 237, 237);
+}
 
+header {
+  background-color: rgb(0, 0, 0);
+  /* position: sticky; */
+  top: 0;
+}
+
+li {
+  list-style: none;
+}
+
+li > a {
+  display: block;
+  padding: .7em 0 .7em 0;
+  color: rgb(234, 234, 234);
+  text-decoration: none;
+  font-weight: 600;
+
+  transition: background-color .2s;
+}
+
+li > a:hover {
+  background-color: rgb(63, 63, 63);
+}
+
+[class*="form-"] {
+    margin-bottom: 1em;
+    field-sizing: content;
+}
+
+body {
+  background-color: rgb(29, 29, 29);
+}
 
 .hero {
   height: 100vh;
@@ -19,51 +51,61 @@
   text-align: left;
 }
 
-header {
-  background-color: rgb(0, 0, 0);
-  /* position: sticky; */
-  top: 0;
+@keyframes pulsate {
+  0% {
+    text-shadow: transparent;
+  }
+  50% {
+    text-shadow:
+      0 0 3em rgba(255, 255, 255, 1),
+      0 0 4em rgba(255, 255, 255, 0.8),
+      0 0 5em rgba(255, 255, 255, 0.6);
+  }
+  100% {
+    text-shadow: transparent;
+  }
 }
 
-li > a {
-  display: block;
-  padding: .7em 0 .7em 0;
-  color: white;
-  text-decoration: none;
+h1 {
   font-weight: 600;
+  padding-bottom: 1rem;
 
-  transition: background-color .2s;
+  animation-name: pulsate;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+
+  /* transition: text-shadow 1s; */
 }
 
-li > a:hover {
-  background-color: rgb(63, 63, 63);
-}
-
-[class*="form-"] {
-    margin-bottom: 1em;
-    field-sizing: content;
-}
+/* h1:hover {
+  text-shadow:
+    0 0 3em rgba(255, 255, 255, 1),
+    0 0 4em rgba(255, 255, 255, 0.8),
+    0 0 5em rgba(255, 255, 255, 0.6);
+} */
 
 table {
   table-layout: fixed;
 }
 
-tr {
-  border-bottom: 1px solid rgb(217, 217, 217);
+thead > tr {
+  border-bottom: 1px solid rgb(131, 131, 131);
 }
+
+tr {
+  border-bottom: 1px solid rgb(84, 84, 84);
+}
+
 
 td {
-  padding-top: .5em;
-  padding-bottom: .5em;
-}
-
-.truncate {
+  padding: 1em 0 1em .5em;
   white-space: nowrap;
   overflow-y: hidden;
   text-overflow: ellipsis;
 }
 
-.truncate:hover {
+td:hover {
   white-space: normal;
   overflow-y: visible;
 }
