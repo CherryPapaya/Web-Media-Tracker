@@ -11,16 +11,23 @@ router.use(express.urlencoded({ extended: true }));
 let data = [];
 
 router.post('/add', (req, res) => {
-    const title = req.body.title;
-    const year = req.body.year;
-    const person = req.body.person;
-    const type = req.body.type;
-    const description = req.body.description;
 
+    const title = req.body.title.trim();
+    const person = req.body.person.trim();
+    const year = req.body.year;
+    const type = req.body.type;
+    const description = req.body.description.trim();
+
+    addEntry(title, person, year, type, description);
+
+    res.render('add');
+})
+
+function addEntry(title, person, year, type, description) {
     const mediaData = {
         title: title,
-        year: year,
         person: person,
+        year: year,
         type: type,
         description: description
     }
@@ -35,8 +42,6 @@ router.post('/add', (req, res) => {
     data.push(mediaData);
 
     fs.writeFileSync(listPath, JSON.stringify(data, null, 2));
-
-    res.redirect('/add.html');
-})
+}
 
 module.exports = router;
