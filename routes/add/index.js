@@ -10,8 +10,11 @@ router.use(express.urlencoded({ extended: true }));
 
 let data = [];
 
-router.post('/add', (req, res) => {
+router.get('/add', (req, res) => {
+    res.render('add');
+})
 
+router.post('/add', (req, res) => {
     const title = req.body.title.trim();
     const person = req.body.person.trim();
     const year = req.body.year;

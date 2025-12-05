@@ -16,8 +16,4 @@ app.get('/', (req, res) => {
     res.sendFile('/index.html');
 });
 
-app.get('/add', (req, res) => {
-    res.render('add');
-})
-
 app.listen(3000);
