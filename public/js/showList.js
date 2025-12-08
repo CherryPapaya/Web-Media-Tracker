@@ -6,21 +6,13 @@ fetch('show')
     const listContainer = document.getElementById('table');
 
     listContainer.innerHTML = `
-      <colgroup>
-        <col style="width:15%">
-        <col style="width:20%">
-        <col style="width:10%">
-        <col style="width:10%">
-        <col style="width:45%">
-      </colgroup>
-
       <thead>
         <tr>
-          <th>Title</th>
-          <th>Person</th>
-          <th>Year</th>
-          <th>Type</th>
-          <th>Description</th>
+          <th class="col-2">Title</th>
+          <th class="col-2">Person</th>
+          <th class="col-1">Year</th>
+          <th class="col-2">Type</th>
+          <th class="col-5">Description</th>
         </tr>
       </thead>
     `;
@@ -36,7 +28,7 @@ fetch('show')
         <td>${item.year}</td>
         <td>${item.type}</td>
         <td>${item.description}</td>
-      `;
+      `;;
 
       listContainer.appendChild(tr);
     });
