@@ -3,7 +3,7 @@ const fs = require('fs');
 const app = express();
 
 // for Render
-const port = process.env.PORT || 4000
+const port = process.env.PORT || 3000;
 
 // serve static HTML/CSS/JS
 app.use(express.static('public'));
