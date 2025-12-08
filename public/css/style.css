@@ -14,10 +14,15 @@ header {
   top: 0;
 }
 
-ul {
-  border-bottom: 2px solid white;
+nav {
+  justify-content: space-evenly;
 }
 
+ul {
+  border-bottom: 2px solid white;
+  justify-content: space-evenly;
+  padding-left: 0;
+}
 
 li {
   list-style: none;
@@ -123,11 +128,11 @@ tr {
 td {
   padding: 1em 0 1em .5em;
   white-space: nowrap;
-  overflow-y: hidden;
+  overflow: hidden;
   text-overflow: ellipsis;
 }
 
 td:hover {
   white-space: normal;
-  overflow-y: visible;
+  overflow: visible;
 }
