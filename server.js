@@ -11,9 +11,11 @@ app.set('view engine', 'ejs');
 
 const add = require('./routes/add');
 const show = require('./routes/show');
+const edit = require('./routes/edit')
 
-app.use('/', add);
+app.use('/add', add);
 app.use('/', show);
+app.use('/', edit);
 
 app.get('/', (req, res) => {
     res.sendFile('/index.html');

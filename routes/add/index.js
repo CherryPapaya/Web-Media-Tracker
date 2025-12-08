@@ -10,11 +10,11 @@ router.use(express.urlencoded({ extended: true }));
 
 let data = [];
 
-router.get('/add', (req, res) => {
+router.get('/', (req, res) => {
     res.render('add');
 })
 
-router.post('/add', (req, res) => {
+router.post('/', (req, res) => {
     const title = req.body.title.trim();
     const person = req.body.person.trim();
     const year = req.body.year;
@@ -23,7 +23,7 @@ router.post('/add', (req, res) => {
 
     addEntry(title, person, year, type, description);
 
-    res.render('add');
+     res.sendFile(path.join(__dirname, '../../public/add.html'));
 })
 
 function addEntry(title, person, year, type, description) {
