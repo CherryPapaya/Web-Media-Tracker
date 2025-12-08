@@ -111,28 +111,3 @@ h1:hover {
 .btn-outline-light:hover {
   box-shadow: 0 0 2em rgba(255, 255, 255, .6);
 }
-
-table {
-  table-layout: fixed;
-}
-
-thead > tr {
-  border-bottom: 1px solid rgb(131, 131, 131);
-}
-
-tr {
-  border-bottom: 1px solid rgb(84, 84, 84);
-}
-
-
-td {
-  padding: 1em 0 1em .5em;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-td:hover {
-  white-space: normal;
-  overflow: visible;
-}

@@ -1,0 +1,43 @@
+.table {
+  table-layout: fixed;
+}
+
+thead > tr {
+  border-bottom: 1px solid rgb(131, 131, 131);
+}
+
+.table .title {
+  width: 20%;
+}
+
+.table .person {
+  width: 20%;
+}
+
+.table .year {
+  width: 10%;
+}
+
+.table .type {
+  width: 10%;
+}
+
+.table .desc {
+  width: 30%;
+}
+
+tr {
+  border-bottom: 1px solid rgb(84, 84, 84);
+  /* padding: 5rem; */
+}
+
+td {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* td:hover {
+  white-space: normal;
+  overflow: visible;
+} */

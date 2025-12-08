@@ -8,14 +8,18 @@ fetch('show')
     listContainer.innerHTML = `
       <thead>
         <tr>
-          <th class="col-2">Title</th>
-          <th class="col-2">Person</th>
-          <th class="col-1">Year</th>
-          <th class="col-2">Type</th>
-          <th class="col-5">Description</th>
+          <th class="title">Title</th>
+          <th class="person">Person</th>
+          <th class="year">Year</th>
+          <th class="type">Type</th>
+          <th class="d-none d-lg-table-cell desc">Description</th>
+          <th class="edit">Edit</th>
         </tr>
       </thead>
     `;
+
+
+    const tbody = document.createElement('tbody');
 
     list = JSON.parse(fileContent);
 
@@ -27,11 +31,19 @@ fetch('show')
         <td>${item.person}</td>
         <td>${item.year}</td>
         <td>${item.type}</td>
-        <td>${item.description}</td>
-      `;;
+        <td class="d-none d-lg-table-cell">${item.description}</td>
+        <td>
+          <button class="btn btn-outline-warning">&#x1F589</button>
+          <button class="btn btn-outline-danger">&#x1F5D1</button>
+        </td>
+      `;
 
-      listContainer.appendChild(tr);
+
+      tbody.appendChild(tr);
     });
+
+    listContainer.appendChild(tbody);
+
 
 
   });
