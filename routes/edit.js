@@ -11,12 +11,10 @@ router.get('/', (req, res) => {
   res.render('edit');
 })
 
-let data = [];
-
 const fileContent = fs.readFileSync(listPath, 'utf-8');
-if (fileContent) {
-    data = JSON.parse(fileContent);
-}
+
+let data = JSON.parse(fileContent);
+
 
 router.get('/:id', (req, res) => {
   const id = Number(req.params.id);

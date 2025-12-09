@@ -23,29 +23,29 @@ fetch('show')
 
     list = JSON.parse(fileContent);
 
-    list.forEach((item) => {
+    list.forEach((entry) => {
       const tr = document.createElement('tr');
 
       tr.innerHTML = `
-        <td>${item.title}</td>
-        <td>${item.person}</td>
-        <td>${item.year}</td>
-        <td>${item.type}</td>
-        <td class="d-none d-lg-table-cell">${item.description}</td>
+        <td>${entry.title}</td>
+        <td>${entry.person}</td>
+        <td>${entry.year}</td>
+        <td>${entry.type}</td>
+        <td class="d-none d-lg-table-cell">${entry.description}</td>
         <td>
-          <a href="/edit/${item.id}" class="btn btn-outline-warning" id="edit-button">&#x1F589</a>
-          <form action="/remove/${item.id}" method="POST">
+          <a href="/edit/${entry.id}" class="btn btn-outline-warning" id="edit-button">&#x1F589</a>
+          <form action="/remove/${entry.id}" method="POST">
             <button type="submit" class="btn btn-outline-danger">&#x1F5D1</button>
           </form>
         </td>
-        `;
+      `;
 
+      tr.addEventListener('click', () => {
+        window.location.href = `entry/${entry.id}`;
+      })
 
       tbody.appendChild(tr);
     });
 
     listContainer.appendChild(tbody);
-
-
-
   });

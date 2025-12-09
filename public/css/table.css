@@ -28,6 +28,7 @@ thead > tr {
 
 tr {
   border-bottom: 1px solid rgb(84, 84, 84);
+  cursor: pointer;
   /* padding: 5rem; */
 }
 
@@ -35,6 +36,7 @@ td {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  padding-top: .75rem;
 }
 
 td > form {

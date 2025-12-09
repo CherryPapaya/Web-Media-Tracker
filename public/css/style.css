@@ -95,12 +95,12 @@ body {
   }
 }
 
-h1 {
+.hero h1 {
   font-weight: 600;
   padding-bottom: 1rem;
 }
 
-h1:hover {
+.hero h1:hover {
   animation-name: glow;
   animation-duration: 5s;
   animation-iteration-count: infinite;
@@ -113,4 +113,16 @@ h1:hover {
 
 option {
   color: black;
+}
+
+.entry h1 {
+  font-weight: bold;
+}
+
+.entry div {
+  display: flex;
+}
+
+.dot {
+  margin: 0 1rem 0 1rem;
 }
