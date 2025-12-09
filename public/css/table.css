@@ -37,6 +37,10 @@ td {
   text-overflow: ellipsis;
 }
 
+td > form {
+  display: inline;
+}
+
 /* td:hover {
   white-space: normal;
   overflow: visible;

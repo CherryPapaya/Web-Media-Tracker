@@ -1,31 +1,10 @@
 [
   {
-    "title": "Ahsoka",
-    "person": "E. K. Johnston",
-    "year": "2016",
-    "type": "Book",
-    "description": "About Ahsoka Tano. Dunno never finished it.",
-    "id": 1
-  },
-  {
-    "title": "fadf",
-    "person": "",
-    "year": "",
-    "description": "",
-    "id": 2
-  },
-  {
-    "title": "Potato",
-    "person": "",
-    "year": "",
-    "description": "",
-    "id": 3
-  },
-  {
-    "title": "Star Wars: Thrawn v1",
+    "title": "Thrawn",
     "person": "Timothy Zahn",
     "year": "2017",
-    "description": "Thrawn's rise to Grand Admiral through sheer intellect.",
-    "id": 0
+    "type": "Book",
+    "description": "Thrawn's rise to Grand Admiral through sheer intellect. And Pryce's rise through politics.",
+    "id": 1765301789776
   }
 ]

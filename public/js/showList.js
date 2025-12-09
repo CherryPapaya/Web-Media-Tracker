@@ -34,9 +34,11 @@ fetch('show')
         <td class="d-none d-lg-table-cell">${item.description}</td>
         <td>
           <a href="/edit/${item.id}" class="btn btn-outline-warning" id="edit-button">&#x1F589</a>
-          <button class="btn btn-outline-danger">&#x1F5D1</button>
+          <form action="/remove/${item.id}" method="POST">
+            <button type="submit" class="btn btn-outline-danger">&#x1F5D1</button>
+          </form>
         </td>
-      `;
+        `;
 
 
       tbody.appendChild(tr);

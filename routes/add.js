@@ -27,14 +27,13 @@ router.post('/', (req, res) => {
 })
 
 function addEntry(title, person, year, type, description) {
-    // const id = computeID();
-
     const mediaData = {
         title: title,
         person: person,
         year: year,
         type: type,
         description: description,
+        id: Date.now()
     }
 
 
