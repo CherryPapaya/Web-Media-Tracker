@@ -33,7 +33,7 @@ fetch('show')
         <td>${item.type}</td>
         <td class="d-none d-lg-table-cell">${item.description}</td>
         <td>
-          <a href="/edit/${item.title}" class="btn btn-outline-warning" id="edit-button">&#x1F589</a>
+          <a href="/edit/${item.idNum}" class="btn btn-outline-warning" id="edit-button">&#x1F589</a>
           <button class="btn btn-outline-danger">&#x1F5D1</button>
         </td>
       `;

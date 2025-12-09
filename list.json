@@ -4,30 +4,22 @@
     "person": "Timothy Zahn",
     "year": "2017",
     "type": "Book",
-    "description": "The story of Thrawn's rise to grand admiral through sheer intellect."
+    "description": "Thrawn's rise to Grand Admiral through sheer intellect.",
+    "id": 0
   },
   {
-    "title": "Potato",
-    "person": "Timothy Zahn",
-    "year": "2017",
-    "description": "The story of Thrawn's rise to grand admiral through sheer intellect."
+    "title": "Ahsoka",
+    "person": "E. K. Johnston",
+    "year": "2016",
+    "type": "Book",
+    "description": "About Ahsoka Tano. Dunno never finished it.",
+    "id": 1
   },
   {
-    "title": "Potato",
-    "person": "Timothy Zahn",
-    "year": "2017",
-    "description": "The story of Thrawn's rise to grand admiral through sheer intellect."
-  },
-  {
-    "title": "Potato",
-    "person": "Timothy Zahn",
-    "year": "2017",
-    "description": "The story of Thrawn's rise to grand admiral through sheer intellect."
-  },
-  {
-    "title": "Potato",
-    "person": "Timothy Zahn",
-    "year": "2017",
-    "description": "The story of Thrawn's rise to grand admiral through sheer intellect."
+    "title": "fadf",
+    "person": "",
+    "year": "",
+    "description": "",
+    "id": 2
   }
 ]

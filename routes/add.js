@@ -8,11 +8,12 @@ const listPath = path.join(__dirname, '../list.json');
 // parse form data (urlencoded)
 router.use(express.urlencoded({ extended: true }));
 
-let data = [];
-
 router.get('/', (req, res) => {
     res.render('add');
 })
+
+
+let data = [];
 
 router.post('/', (req, res) => {
     const title = req.body.title.trim();
@@ -23,18 +24,20 @@ router.post('/', (req, res) => {
 
     addEntry(title, person, year, type, description);
 
-    //  res.sendFile(path.join(__dirname, '../../public/add.html'));
     res.render('add');
 })
 
 function addEntry(title, person, year, type, description) {
+    // const id = computeID();
+
     const mediaData = {
         title: title,
         person: person,
         year: year,
         type: type,
-        description: description
+        description: description,
     }
+
 
     if (fs.existsSync(listPath)) {
         const fileContent = fs.readFileSync(listPath, 'utf-8');
