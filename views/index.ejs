@@ -12,27 +12,7 @@
   </head>
 
   <body>
-    <header>
-      <nav class="container">
-        <ul class="row text-center">
-          <li class="col-2">
-            <a href="" class="">Home</a>
-          </li>
-          <li class="col-2">
-            <a href="" class="">Books</a>
-          </li>
-          <li class="col-2">
-            <a href="" class="">Movies</a>
-          </li>
-          <li class="col-2">
-            <a href="" class="">TV Shows</a>
-          </li>
-          <li class="col-2">
-            <a href="" class="">Games</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+    <%- include('./partials/header.ejs') %>
 
     <main>
         <div class="container text-center hero">
@@ -40,8 +20,8 @@
             <h1>WELCOME. WHAT WOULD YOU LIKE TO DO?</h1>
 
             <div class="row justify-content-center column-gap-4">
-              <a class="btn btn-outline-light col-5 col-md-3" href="browse.html">Browse Collection</a>
-              <a class="btn btn-outline-light col-5 col-md-3" href="add.html">Add to Collection</a>
+              <a class="btn btn-outline-light col-5 col-md-3" href="browse">Browse Collection</a>
+              <a class="btn btn-outline-light col-5 col-md-3" href="add">Add to Collection</a>
             </div>
           </div>
         </div>

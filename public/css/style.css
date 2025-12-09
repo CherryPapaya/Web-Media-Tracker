@@ -44,11 +44,10 @@ li > a:hover {
 
 .form-floating {
     margin-bottom: 1em;
-    /* background-color: rgb(63, 63, 63); */
     field-sizing: content;
 }
 
-[class*="form-"]:not([class*="float"]):focus {
+/* [class*="form-"]:not([class*="float"]):focus {
   border: 0
 }
 
@@ -58,7 +57,7 @@ li > a:hover {
 
 [class*="form-"]:not([class*="float"]).fail {
   border: 3px solid red;
-}
+} */
 
 /* .error {
 
@@ -110,4 +109,8 @@ h1:hover {
 
 .btn-outline-light:hover {
   box-shadow: 0 0 2em rgba(255, 255, 255, .6);
+}
+
+option {
+  color: black;
 }

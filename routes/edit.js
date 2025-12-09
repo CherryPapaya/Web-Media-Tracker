@@ -3,18 +3,20 @@ const fs = require('fs');
 const router = express.Router();
 const path = require('path');
 
-const listPath = path.join(__dirname, '../../list.json');
+const listPath = path.join(__dirname, '../list.json');
 
-let data = [];
 
-router.get('/edit', (req, res) => {
+router.get('/', (req, res) => {
   res.render('edit');
 })
 
-router.get('/edit/:title', (req, res) => {
+let data = [];
+
+router.get('/:title', (req, res) => {
   const title = req.params.title;
 
   const fileContent = fs.readFileSync(listPath, 'utf-8');
+
   if (fileContent) {
     data = JSON.parse(fileContent);
   }
@@ -22,7 +24,10 @@ router.get('/edit/:title', (req, res) => {
   const entry = data.find(e => e.title === title);
 
   res.render('edit', { entry });
-  // console.log(entry);
+})
+
+router.put('/', (req, res) => {
+  res.send("PUTTEDED");
 
 
 

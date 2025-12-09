@@ -29,15 +29,15 @@
       <div class="container">
         <h2>Edit</h2>
         <div class="row">
-          <form class="col-lg-5" id="form" action="/add" method="POST">
+          <form class="col-lg-5" id="form" action="/edit" method="PUT">
             <div class="form-floating">
-              <input type="text" class="form-control" name="title" placeholder="title" id="title">
+              <input type="text" class="form-control" name="title" placeholder="title" id="title" value="<%= entry.title %>">
               <label class="label" for="title">Title</label>
               <div class="error"></div>
             </div>
 
             <div class="form-floating">
-              <input type="text" class="form-control" name="person" placeholder="person" id="person">
+              <input type="text" class="form-control" name="person" placeholder="person" id="person" value="<%= entry.person %>">
               <label class="label" for="person">Person</label>
               <div class="error"></div>
             </div>
@@ -45,7 +45,7 @@
             <div class="row">
               <div class="col-6">
                 <div class="form-floating">
-                  <input type="number" class="form-control" name="year" placeholder="year" id="year">
+                  <input type="number" class="form-control" name="year" placeholder="year" id="year" value="<%= entry.year %>">
                   <label class="label" for="year">Year</label>
                   <div class="error"></div>
                 </div>
@@ -54,7 +54,7 @@
               <div class="col-6">
                 <div class="form-floating">
                   <select class="form-select" name="type" id="type">
-                    <option value="" selected disabled hidden>Select an option</option>
+                    <option selected disabled hidden><%= entry.type %></option>
                     <option value="Book">Book</option>
                     <option value="Movie">Movie</option>
                     <option value="TV show">TV Show</option>
@@ -67,7 +67,7 @@
             </div>
 
               <div class="form-floating textarea">
-                <textarea class="form-control" name="description"></textarea>
+                <textarea class="form-control" name="description"><%= entry.description %></textarea>
                 <label class="label" for="description">Description (Optional)</label>
               </div>
 
@@ -75,7 +75,7 @@
               <p class="err-text"></p>
             </div>
 
-            <button class="btn btn-outline-primary submit-button" id="submit-button" type="submit">Submit</button>
+            <button class="btn btn-outline-light submit-button" id="submit-button" type="submit">Submit</button>
           </form>
         </div>
       </div>

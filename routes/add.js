@@ -3,7 +3,7 @@ const fs = require('fs');
 const router = express.Router();
 const path = require('path');
 
-const listPath = path.join(__dirname, '../../list.json');
+const listPath = path.join(__dirname, '../list.json');
 
 // parse form data (urlencoded)
 router.use(express.urlencoded({ extended: true }));
@@ -23,7 +23,8 @@ router.post('/', (req, res) => {
 
     addEntry(title, person, year, type, description);
 
-     res.sendFile(path.join(__dirname, '../../public/add.html'));
+    //  res.sendFile(path.join(__dirname, '../../public/add.html'));
+    res.render('add');
 })
 
 function addEntry(title, person, year, type, description) {
