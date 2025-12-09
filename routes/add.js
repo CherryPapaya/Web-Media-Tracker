@@ -12,7 +12,6 @@ router.get('/', (req, res) => {
     res.render('add');
 })
 
-
 let data = [];
 
 router.post('/', (req, res) => {

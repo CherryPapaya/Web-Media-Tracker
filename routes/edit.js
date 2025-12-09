@@ -13,14 +13,13 @@ router.get('/', (req, res) => {
 
 let data = [];
 
+const fileContent = fs.readFileSync(listPath, 'utf-8');
+if (fileContent) {
+    data = JSON.parse(fileContent);
+}
+
 router.get('/:id', (req, res) => {
   const id = Number(req.params.id);
-
-  const fileContent = fs.readFileSync(listPath, 'utf-8');
-
-  if (fileContent) {
-    data = JSON.parse(fileContent);
-  }
 
   const entry = data.find(e => e.id === id);
 
@@ -31,27 +30,30 @@ router.post('/:id', (req, res) => {
   const title = req.body.title.trim();
   const person = req.body.person.trim();
   const year = req.body.year.trim();
-  const type = req.body.year.trim();
+  const type = req.body.type;
   const description = req.body.description.trim();
+  const id = Number(req.params.id);
 
-  updateEntry(title, person, year, type, description);
+  updateEntry(title, person, year, type, description, id);
 
-  res.send("PUTETED");
-
+  res.redirect('/browse');
 })
 
-function updateEntry(title, person, year, type, description) {
-  const mediaData = {
+function updateEntry(title, person, year, type, description, id) {
+  data = data.filter(e => e.id !== id);
+
+  const edited = {
     title: title,
     person: person,
     year: year,
     type: type,
-    description: description
+    description: description,
+    id: id
   }
 
-  const fileContent = fs.readFileSynce(listPath, 'utf-8');
-  data = JSON.parse(fileContent);
+  data.push(edited);
 
+  fs.writeFileSync(listPath, JSON.stringify(data, null, 2));
 
 }
 
