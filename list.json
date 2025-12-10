@@ -1,13 +1,5 @@
 [
   {
-    "title": "Thrawn",
-    "person": "Timothy Zahn",
-    "year": "2017",
-    "type": "Book",
-    "description": "Thrawn's rise to Grand Admiral through sheer intellect, and Pryce's political navigation.",
-    "id": 1765304990707
-  },
-  {
     "title": "World War Z",
     "person": "Brad Pitt",
     "year": "2013",
@@ -22,5 +14,13 @@
     "type": "Book",
     "description": "About Ahsoka. Idk",
     "id": 1765359117387
+  },
+  {
+    "title": "Thrawn",
+    "person": "Timothy Zahn",
+    "year": "2017",
+    "type": "Book",
+    "description": "Thrawn's rise to Grand Admiral through sheer intellect, and Pryce's political navigation.",
+    "id": 1765304990707
   }
 ]
