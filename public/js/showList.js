@@ -41,7 +41,7 @@ fetch('show')
       `;
 
       tr.addEventListener('click', () => {
-        window.location.href = `entry/${entry.id}`;
+        window.location.href = `/entry/${entry.id}`;
       })
 
       tbody.appendChild(tr);

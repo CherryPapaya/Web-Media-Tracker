@@ -6,5 +6,21 @@
     "type": "Book",
     "description": "Thrawn's rise to Grand Admiral through sheer intellect, and Pryce's political navigation.",
     "id": 1765304990707
+  },
+  {
+    "title": "World War Z",
+    "person": "Brad Pitt",
+    "year": "2013",
+    "type": "Movie",
+    "description": "As the world is grasped by a mysterious infection that turns humans into zombies, Gerry, a former UN investigator has to leave his family to determine the source of the infection.",
+    "id": 1765305949786
+  },
+  {
+    "title": "Ahsoka",
+    "person": "E. K. Johnston",
+    "year": "2016",
+    "type": "Book",
+    "description": "About Ahsoka. Idk",
+    "id": 1765359117387
   }
 ]
