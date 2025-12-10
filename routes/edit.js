@@ -11,13 +11,13 @@ router.get('/', (req, res) => {
   res.render('edit');
 })
 
-const fileContent = fs.readFileSync(listPath, 'utf-8');
-
-let data = JSON.parse(fileContent);
-
+let data;
 
 router.get('/:id', (req, res) => {
   const id = Number(req.params.id);
+
+  const fileContent = fs.readFileSync(listPath, 'utf-8');
+  data = JSON.parse(fileContent);
 
   const entry = data.find(e => e.id === id);
 
@@ -38,6 +38,8 @@ router.post('/:id', (req, res) => {
 })
 
 function updateEntry(title, person, year, type, description, id) {
+  const fileContent = fs.readFileSync(listPath, 'utf-8');
+  data = JSON.parse(fileContent);
   data = data.filter(e => e.id !== id);
 
   const edited = {
