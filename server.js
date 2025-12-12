@@ -27,7 +27,6 @@ app.use('/entry', entry);
 
 app.get('/', (req, res) => {
     res.render('index');
-
 });
 
 
