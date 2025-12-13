@@ -1,16 +1,23 @@
-.card-title {
-  color: rgb(237, 237, 237);
-  font-weight: 600;
+#cards-container {
+  padding-top: 1rem;
 }
 
 .card {
   background-color: rgb(37, 37, 37);
   border: 1px solid grey;
   cursor: pointer;
+
+  transition: transform 0.2s;
 }
 
 .card:hover {
   border: 1px solid white;
+  transform: scale(1.1);
+}
+
+.card-title {
+  color: rgb(237, 237, 237);
+  font-weight: 600;
 }
 
 .card > img {
@@ -35,8 +42,25 @@
 
 .btn-outline-warning, .btn-outline-danger {
   max-width: max-content;
+  z-index: 999;
 }
 
 .buttons {
   display: flex;
+}
+
+.bi-pencil-square {
+  color: #ffc107;
+}
+
+.btn-outline-warning:hover > i {
+  color: black;
+}
+
+.bi-trash {
+  color: #dc3545;
+}
+
+.btn-outline-danger:hover > i {
+  color: white;
 }

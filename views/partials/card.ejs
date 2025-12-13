@@ -5,9 +5,13 @@
       <h5 class="card-title"><%= entry.title %></h5>
       <p class="card-text"><%= entry.description %></p>
       <div class="buttons row-cols-2 gap-2">
-        <a href="/edit/<%= entry.id %>" class="btn btn-outline-warning">&#x1F589</a>
-        <form action="/remove/<%= entry.id %>" method="POST">
-          <button type="submit" class="btn btn-outline-danger">&#x1F5D1</button>
+        <a href="/edit/<%= entry.id %>" class="btn btn-outline-warning">
+          <i class="bi bi-pencil-square"></i>
+        </a>
+        <form action="/remove/<%= entry.id %>" method="POST" onclick="event.stopPropagation()">
+          <button type="submit" class="btn btn-outline-danger">
+            <i class="bi bi-trash"></i>
+          </button>
         </form>
       </div>
     </div>
