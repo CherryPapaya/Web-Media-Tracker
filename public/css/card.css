@@ -42,7 +42,6 @@
 
 .btn-outline-warning, .btn-outline-danger {
   max-width: max-content;
-  z-index: 999;
 }
 
 .buttons {
