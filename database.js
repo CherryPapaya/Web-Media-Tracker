@@ -13,7 +13,7 @@ const pool = mysql.createPool ({
 getMedia();
 
 async function getMedia() {
-  const [rows, fields]  = await pool.query('SELECT * FROM media');
+  const [rows]  = await pool.query('SELECT * FROM media');
   console.log(rows);
   pool.end();
 }

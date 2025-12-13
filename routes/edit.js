@@ -40,9 +40,10 @@ router.post('/:id', (req, res) => {
 function updateEntry(title, person, year, type, description, id) {
   const fileContent = fs.readFileSync(listPath, 'utf-8');
   data = JSON.parse(fileContent);
-  data = data.filter(e => e.id !== id);
 
-  const edited = {
+  const index = data.findIndex(e => e.id === id);
+
+  data[index] = {
     title: title,
     person: person,
     year: year,
@@ -50,8 +51,6 @@ function updateEntry(title, person, year, type, description, id) {
     description: description,
     id: id
   }
-
-  data.push(edited);
 
   fs.writeFileSync(listPath, JSON.stringify(data, null, 2));
 
