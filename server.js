@@ -10,7 +10,6 @@ app.use(express.static('public'));
 app.set('view engine', 'ejs');
 
 const add = require('./routes/add');
-const show = require('./routes/show');
 const edit = require('./routes/edit')
 const browse = require('./routes/browse');
 const index = require('./routes/index');
@@ -18,7 +17,6 @@ const remove = require('./routes/remove');
 const entry = require('./routes/entry');
 
 app.use('/add', add);
-app.use('/show', show);
 app.use('/edit', edit);
 app.use('/browse', browse);
 app.use('/index', index);

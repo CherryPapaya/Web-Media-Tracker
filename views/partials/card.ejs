@@ -1,13 +1,15 @@
-<div class="card">
-  <img src="img/Chiitan car.jpg" alt="" class="card-img-top:srcset"></img>
+<div class="col-10 col-sm-5 col-lg-3">
+  <div class="card" data-id="<%= entry.id %>">
+    <img src="img/Chiitan car.jpg" alt="" class="card-img-top:srcset"></img>
     <div class="card-body">
-      <h4 class="card-title">Title</h4>
-      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, set</p>
-      <div class="buttons">
-        <a href="/edit/${entry.id}" class="btn btn-outline-warning" id="edit-button">&#x1F589</a>
-        <form action="/remove/${entry.id}" method="POST">
+      <h5 class="card-title"><%= entry.title %></h5>
+      <p class="card-text"><%= entry.description %></p>
+      <div class="buttons row-cols-2 gap-2">
+        <a href="/edit/<%= entry.id %>" class="btn btn-outline-warning">&#x1F589</a>
+        <form action="/remove/<%= entry.id %>" method="POST">
           <button type="submit" class="btn btn-outline-danger">&#x1F5D1</button>
         </form>
       </div>
+    </div>
   </div>
 </div>

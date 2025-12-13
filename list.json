@@ -8,19 +8,19 @@
     "id": 1765305949786
   },
   {
-    "title": "Ahsoka",
-    "person": "E. K. Johnston",
-    "year": "2016",
-    "type": "Book",
-    "description": "About Ahsoka. Idk",
-    "id": 1765359117387
-  },
-  {
     "title": "Thrawn",
     "person": "Timothy Zahn",
     "year": "2017",
     "type": "Book",
     "description": "Thrawn's rise to Grand Admiral through sheer intellect, and Pryce's political navigation.",
     "id": 1765304990707
+  },
+  {
+    "title": "Ahsoka",
+    "person": "E. K. Johnston",
+    "year": "2016",
+    "type": "Book",
+    "description": "Ahsoka realizes that choosing a side is inevitable.",
+    "id": 1765631139874
   }
 ]
