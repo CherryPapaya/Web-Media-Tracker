@@ -23,6 +23,8 @@ fetch('show')
 
     list = JSON.parse(fileContent);
 
+    list.sort((a, b) => a.title.localeCompare(b.title));
+
     list.forEach((entry) => {
       const tr = document.createElement('tr');
 
