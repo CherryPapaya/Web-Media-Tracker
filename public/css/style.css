@@ -47,21 +47,13 @@ li > a:hover {
     field-sizing: content;
 }
 
-/* [class*="form-"]:not([class*="float"]):focus {
-  border: 0
+option {
+  color: black;
 }
 
-[class*="form-"]:not([class*="float"]).success {
-  border: 3px solid green;
+textarea {
+  height: 8rem !important;
 }
-
-[class*="form-"]:not([class*="float"]).fail {
-  border: 3px solid red;
-} */
-
-/* .error {
-
-} */
 
 body {
   background-color: rgb(29, 29, 29);
@@ -109,10 +101,6 @@ body {
 
 .btn-outline-light:hover {
   box-shadow: 0 0 2em rgba(255, 255, 255, .6);
-}
-
-option {
-  color: black;
 }
 
 .entry h1 {
