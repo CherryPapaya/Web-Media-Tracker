@@ -3,7 +3,7 @@
 }
 
 thead > tr {
-  border-bottom: 1px solid rgb(131, 131, 131);
+  border-bottom: 2px solid rgb(131, 131, 131);
 }
 
 .table .title {
@@ -26,7 +26,7 @@ thead > tr {
   width: 30%;
 }
 
-tr {
+tbody > tr {
   border-bottom: 1px solid rgb(84, 84, 84);
   cursor: pointer;
   /* padding: 5rem; */
@@ -47,3 +47,7 @@ td > form {
   white-space: normal;
   overflow: visible;
 } */
+
+.edit {
+  background-color: white;
+}
