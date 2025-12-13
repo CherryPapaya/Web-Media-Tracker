@@ -9,7 +9,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const id = card.dataset.id;
     window.location.href = `/entry/${id}`;
   });
+
+  const deleteForms = document.querySelectorAll('form[action^="/remove/"]');
+  deleteForms.forEach(form => {
+    form.addEventListener('submit', (e) => {
+      const confirmed = confirm('Are you sure you want to delete this entry?');
+      if (!confirmed) e.preventDefault();
+    });
+  });
 });
-
-
-

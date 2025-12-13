@@ -17,7 +17,7 @@ router.post('/:id', (req, res) => {
   fs.writeFileSync(listPath, JSON.stringify(data, null, 2));
 
   res.redirect('/browse');
-  // res.send("Delede me vrom de gah");
+// res.send("Delede me vrom de gah");
 })
 
 module.exports = router;
