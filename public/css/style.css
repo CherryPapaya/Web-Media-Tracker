@@ -48,10 +48,6 @@ li > a:hover {
     field-sizing: content;
 }
 
-option {
-  color: black;
-}
-
 textarea {
   height: 8rem !important;
 }
