@@ -18,7 +18,7 @@
       <div class="container">
         <h2>Edit</h2>
         <div class="row">
-          <form class="col-lg-5" id="form" action="/edit/<%= entry.id%>" method="POST">
+          <form class="col-lg-5" id="form" action="/edit/<%= entry.id%>" method="POST" data-bs-theme="dark">
             <div class="form-floating">
               <input type="text" class="form-control" name="title" placeholder="title" id="title" value="<%= entry.title %>">
               <label class="label" for="title">Title</label>

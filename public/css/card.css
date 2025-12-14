@@ -1,3 +1,10 @@
+:root {
+  --movie-color: rgb(215, 112, 107);
+  --tv-color: rgb(110, 194, 231);
+  --book-color: rgb(96, 203, 113);
+  --game-color: rgb(204, 213, 122);
+}
+
 #cards-container {
   padding-top: 1rem;
 }
@@ -9,14 +16,28 @@
 
   transition: transform 0.2s;
 }
+/*
+@keyframes spin {
+  0% {
+    transform: rotate(0)
+  }
+  100% {
+    transform: rotate(360deg)
+  }
+} */
 
 .card:hover {
   border: 1px solid white;
   transform: scale(1.1);
+
+  /* animation-name: spin;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function:cubic-bezier(1, 0, 0, 1); */
 }
 
 .card-title {
-  color: rgb(237, 237, 237);
+  color: rgb(255, 255, 255);
   font-weight: 600;
 }
 
@@ -25,7 +46,13 @@
   border-top-right-radius: inherit;
 }
 
-.card-text {
+.card-year {
+  font-size: .8rem;
+  margin-bottom: .5rem;
+  color: rgb(224, 224, 224);
+}
+
+.card-desc {
   overflow: hidden;
   display: -webkit-box;
   -webkit-box-orient: vertical;
@@ -34,19 +61,54 @@
   min-height: 4.9rem;
 }
 
-/* .card-text:hover {
-  min-height: none;
-  white-space: normal;
-  overflow: visible;
-} */
+.card-type-container {
+  align-content: center;
+}
+
+.card-type-span {
+  border: 1px solid;
+  padding: .1rem .8rem .2rem ;
+  font-size: .7rem;
+  border-radius: 1rem;
+}
+
+.Movie {
+  background-color: rgb(from var(--movie-color) r g b / 15%);
+  border-color:  var(--movie-color);
+  color: var(--movie-color);
+}
+
+.TV {
+  background-color: rgb(from var(--tv-color) r g b / 15%);
+  border-color:  var(--tv-color);
+  color: var(--tv-color);
+}
+
+.Book {
+  background-color: rgb(from var(--book-color) r g b / 15%);
+  border-color:  var(--book-color);
+  color: var(--book-color);
+}
+
+.Game {
+  background-color: rgb(from var(--game-color) r g b / 15%);
+  border-color:  var(--game-color);
+  color: var(--game-color);
+}
+
+.card-buttons {
+  display: flex;
+  justify-content: right;
+}
+
+.card-buttons > form{
+  width: fit-content;
+}
 
 .btn-outline-warning, .btn-outline-danger {
   max-width: max-content;
 }
 
-.buttons {
-  display: flex;
-}
 
 .bi-pencil-square {
   color: #ffc107;

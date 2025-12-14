@@ -22,5 +22,21 @@
     "type": "Book",
     "description": "Ahsoka realizes that choosing a side is inevitable.",
     "id": 1765631139874
+  },
+  {
+    "title": "Taxi Driver",
+    "person": "Lee Je Hoon",
+    "year": "2021",
+    "type": "TV show",
+    "description": "A secret taxi organization avenges those who have been failed by the justice system.",
+    "id": 1765698231811
+  },
+  {
+    "title": "Path of Exile",
+    "person": "Einhar",
+    "year": "2013",
+    "type": "Video Game",
+    "description": "A game about an exile who is on a path... a Path of Exile.",
+    "id": 1765700831263
   }
 ]
