@@ -1,25 +1,27 @@
-<div class="col-12 col-sm-6 col-md-5 col-lg-4 col-xl-3 card-wrapper">
-  <div class="card" data-id="<%= entry.id %>">
-    <img src="img/Chiitan_car.jpg" alt="" class="card-img-top:srcset"></img>
-    <div class="card-body">
-      <h5 class="card-title"><%= entry.title %></h5>
-      <p class="card-text card-year"><%= entry.year %></p>
-      <p class="card-text card-desc"><%= entry.description %></p>
-      <div class="card-bottom">
-        <div class="card-type-container">
-          <!-- This should be an a that leads to browse page showing entries of that type -->
-          <span class="card-type-span <%= entry.type %>"><%= entry.type %></span>
-        </div>
-        <div class="card-buttons row-cols-2 gap-2">
-          <a href="/edit/<%= entry.id %>" class="btn btn-outline-warning">
-            <i class="bi bi-pencil-square"></i>
-          </a>
-          <!-- stopPropation prevents the card being clicked when clicking the icon -->
-          <form action="/remove/<%= entry.id %>" method="POST" onclick="event.stopPropagation()">
-            <button type="submit" class="btn btn-outline-danger">
-              <i class="bi bi-trash"></i>
-            </button>
-          </form>
+<div class="col-12 col-sm-6 col-md-5 col-lg-4 col-xl-3">
+  <div class="card-wrapper">
+    <div class="card" data-id="<%= entry.id %>">
+      <img src="img/Chiitan_car.jpg" alt="" class="card-img-top:srcset"></img>
+      <div class="card-body">
+        <h5 class="card-title"><%= entry.title %></h5>
+        <p class="card-text card-year"><%= entry.year %></p>
+        <p class="card-text card-desc"><%= entry.description %></p>
+        <div class="card-bottom">
+          <div class="card-type-container">
+            <!-- This should be an a that leads to browse page showing entries of that type -->
+            <span class="card-type-span <%= entry.type %>"><%= entry.type %></span>
+          </div>
+          <div class="card-buttons row-cols-2 gap-2">
+            <a href="/edit/<%= entry.id %>" class="btn btn-outline-warning">
+              <i class="bi bi-pencil-square"></i>
+            </a>
+            <!-- stopPropation prevents the card being clicked when clicking the icon -->
+            <form action="/remove/<%= entry.id %>" method="POST" onclick="event.stopPropagation()">
+              <button type="submit" class="btn btn-outline-danger">
+                <i class="bi bi-trash"></i>
+              </button>
+            </form>
+          </div>
         </div>
       </div>
     </div>
