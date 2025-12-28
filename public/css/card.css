@@ -14,8 +14,20 @@
   border: 1px solid grey;
   cursor: pointer;
   overflow: hidden;
+  aspect-ratio: 2 / 3;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  
 
   transition: transform 0.2s;
+}
+
+@media (max-width: 576px) {
+  .card {
+    max-height: 25rem;
+    min-height: 21.5rem;
+  }
 }
 /*
 @keyframes spin {
@@ -37,6 +49,11 @@
   animation-timing-function:cubic-bezier(1, 0, 0, 1); */
 }
 
+.card-body {
+  display: flex;
+  flex-direction: column;
+}
+
 .card-title {
   color: rgb(255, 255, 255);
   font-weight: 600;
@@ -54,15 +71,16 @@
 }
 
 .card-desc {
-  overflow: hidden;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
-  line-clamp: 2;
-  min-height: 4.9rem;
+  line-clamp: 3;
+  overflow: hidden;
+  /* flex: 1; */
 }
 
 .card-type-container {
+  width: max-content;
   align-content: center;
 }
 
@@ -97,9 +115,18 @@
   color: var(--game-color);
 }
 
+.card-bottom {
+  width: 89%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 1rem;
+}
+
 .card-buttons {
   display: flex;
-  justify-content: right;
+  /* justify-content: right; */
 }
 
 .card-buttons > form{
