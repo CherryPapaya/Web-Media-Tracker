@@ -18,7 +18,7 @@
     <%- include('./partials/header.ejs') %>
 
     <div class="container justify-content-center">
-      <div class="row gy-4 justify-content-center" id="cards-container">
+      <div class="justify-content-center" id="cards-container">
         <% data.forEach(entry => { %>
           <%- include('partials/card', { entry: entry }) %>
         <% }) %>
