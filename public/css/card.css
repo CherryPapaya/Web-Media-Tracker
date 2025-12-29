@@ -6,17 +6,7 @@
 }
 
 #cards-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(14em, 1fr));
-  gap: 1rem;
   padding-top: 1rem;
-}
-
-@media (max-width: 576px) {
-  .card {
-    max-height: 26rem;
-    min-height: 20rem;
-  }
 }
 
 .card-wrapper {
@@ -37,6 +27,12 @@
   transition: transform 0.2s;
 }
 
+@media (max-width: 576px) {
+  .card {
+    max-height: 26rem;
+    min-height: 20rem;
+  }
+}
 /*
 @keyframes spin {
   0% {
